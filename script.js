@@ -7,6 +7,9 @@ const map = L.map("map", {
 map.setView([0, 0], 0);
 
 const bounds = [[-2000, -2000], [2000, 2000]];
+const maxBounds = [[-1500, -2000], [1250, 2500]];
+
+map.setMaxBounds(maxBounds);
 
 // https://stackoverflow.com/questions/33767463/overlaying-a-text-box-on-a-leaflet-js-map
 let textbox = L.Control.extend({
