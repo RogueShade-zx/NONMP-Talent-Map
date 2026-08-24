@@ -1,0 +1,13 @@
+{
+  "name": "NONMP Talent Map",
+  "version": "1.0.0",
+  "author": "Shade_zx",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "leaflet": "^1.9.4"
+  }
+}
