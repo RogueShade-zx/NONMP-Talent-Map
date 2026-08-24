@@ -66,10 +66,6 @@ const popupLayer = document.createElementNS(SVG_NS, "g");
 popupLayer.setAttribute("id", "popup-layer");
 svg.append(popupLayer);
 
-svg.addEventListener("click", () => {
-    console.log("svg clicked");
-});
-
 function gameToSvgX(x) {
     return 2000 + x;
 }
@@ -222,10 +218,7 @@ function renderNode(node, character) {
 
     group.addEventListener("mouseover", () => highlight(node));
     group.addEventListener("mouseleave", () => activeHighlight.style.display = "none");
-    group.addEventListener("click", () => {
-        console.log("node clicked:", node.name);
-        popup(node);
-    });
+    group.addEventListener("click", () => popup(node));
 
     character.appendChild(group);
 }
